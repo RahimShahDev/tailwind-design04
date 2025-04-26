@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learner High School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<style>
+    /* CSS-only mobile menu toggle */
+    #mobile-menu-toggle:checked~#mobile-menu {
+        display: block;
+    }
+</style>
+
+<body class="font-sans text-gray-800">
+    <!-- NavBar Section  -->
+    <section class="bg-[#F9C301] shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Left side - Logo and Navigation Links -->
+                <div class="flex items-center space-x-8">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <img class="w-12 h-12" src="image/logo.png" alt="Logo" />
+                    </div>
+
+                    <!-- Desktop Navigation Links -->
+                    <ul class="hidden md:flex space-x-8">
+                        <li>
+                            <a href="#"
+                                class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200">Solutions</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200">Industries</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200">Fees</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200">About
+                                Rareblocks</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right side - Auth Buttons (Desktop) -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#"
+                        class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200">Sign
+                        In</a>
+                    <a href="#"
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap">
+                        Create free account
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <label for="mobile-menu-toggle" class="cursor-pointer">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Mobile menu (hidden by default) -->
+            <input type="checkbox" id="mobile-menu-toggle" class="hidden" />
+            <div class="hidden md:hidden" id="mobile-menu">
+                <div class="pt-2 pb-3 space-y-1">
+                    <a href="#"
+                        class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Solutions</a>
+                    <a href="#"
+                        class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Industries</a>
+                    <a href="#"
+                        class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Fees</a>
+                    <a href="#"
+                        class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">About
+                        Rareblocks</a>
+                </div>
+                <div class="pt-4 pb-3 border-t border-gray-200">
+                    <div class="space-y-1">
+                        <a href="#"
+                            class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Sign
+                            In</a>
+                        <a href="#"
+                            class="block px-3 py-2 text-base font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700">
+                            Create free account
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- hero section  -->
+    <section class="bg-yellow-400 py-12 px-6 md:px-16">
+        <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
+            <!-- Left Content -->
+            <div class="text-center md:text-left md:w-1/2 mt-8 md:mt-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-800 leading-tight">
+                    Welcome to <br />
+                    The Learner High School
+                </h1>
+                <h4 class="text-xl text-[#52525B] font-bold py-3">
+                    Inspiring Excellence, Empowering Futures
+                </h4>
+                <p class="text-lg text-gray-700 mb-6">
+                    At The Learners High School for Boys and Girls, we nurture
+                    curiosity, build character, and ignite a lifelong love for learning.
+                    With a commitment to academic excellence and holistic development,
+                    we prepare our students to thrive in a dynamic world.
+                </p>
+                <a href="#contact"
+                    class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-6 rounded-full transition duration-300">
+                    Learn More
+                </a>
+            </div>
+
+            <!-- Right Image -->
+            <div class="md:w-1/2 flex justify-center">
+                <img src="image/hero-image.png" alt="Happy Kids" class="w-full max-w-md" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Note Section  -->
+    <section class="py-16 px-6 md:px-16 bg-white relative">
+        <div class="max-w-7xl mx-auto">
+            <!-- Card -->
+            <div
+                class="relative bg-pink-50 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-12">
+                <!-- Welcome Note Badge on Card -->
+                <div
+                    class="absolute top-0 left-0 bg-pink-500 text-white text-xs font-semibold py-1 px-4 rounded-full shadow-md transform -translate-x-4 -translate-y-4">
+                    Welcome Note
+                </div>
+
+                <!-- Left Image -->
+                <div class="relative w-full md:w-1/2 flex justify-center">
+                    <div class="relative w-80 h-80">
+                        <!-- Main Image -->
+                        <img src="image/Welcome-note.jpg" alt="School Welcome"
+                            class="w-full h-full rounded-full border-8 border-pink-300 object-cover shadow-lg transition-transform duration-300 hover:scale-105" />
+
+                        <!-- Top Right Badge on Image -->
+                        <div
+                            class="absolute top-0 right-0 bg-pink-500 text-white text-xs font-semibold py-1 px-3 rounded-full shadow-md transform translate-x-3 -translate-y-3">
+                            New!
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="w-full md:w-1/2 text-center md:text-left">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 leading-tight">
+                        The Learners School Welcomes You
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        We are thrilled to have you join our vibrant community of curious
+                        minds and bright futures. At The Learner School, every day is a
+                        new opportunity to discover, grow, and create lasting memories.
+                        <br /><br />
+                        Here, learning is an adventure, and every learner is valued,
+                        supported, and celebrated. We look forward to seeing all that you
+                        will achieve — and we are excited to walk this journey with you!
+                        Welcome aboard!
+                    </p>
+                </div>
+            </div>
+            <!-- End Card -->
+        </div>
+    </section>
+
+    <!-- About Us Section  -->
+    <section class="py-16 px-6 md:px-16 bg-white relative">
+        <div class="max-w-7xl mx-auto">
+            <!-- Card -->
+            <div
+                class="relative bg-pink-50 rounded-2xl shadow-xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-12 transition-transform duration-300 hover:shadow-2xl hover:-translate-y-2">
+                <!-- About Us Badge on Card -->
+                <div
+                    class="absolute top-0 right-0 bg-pink-500 text-white text-md font-semibold py-3 px-8 rounded-full shadow-md transform -translate-x-4 -translate-y-4">
+                    About Us
+                </div>
+
+                <!-- Left Content -->
+                <div class="w-full md:w-1/2 text-center md:text-left">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6 leading-tight">
+                        Who We Are
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        At The Learner School, we believe that every child is a unique
+                        learner with endless potential. Our mission is to nurture
+                        curiosity, creativity, and a love for lifelong learning.  We
+                        provide a safe, supportive, and dynamic environment where students
+                        are encouraged to explore their interests, build confidence, and
+                        grow into compassionate, critical thinkers.
+                        <br /><br />
+                        Through a blend of strong academics, innovative programs, and a
+                        focus on character development, we aim to prepare our learners not
+                        just for school, but for life.  At The Learner School, we don’t
+                        just educate minds — we inspire dreams.
+                        <br /><br />
+                        Come learn, grow, and shine with us!
+                    </p>
+                </div>
+
+                <!-- Right Image -->
+                <div class="relative w-full md:w-1/2 flex justify-center">
+                    <div class="relative w-80 h-80">
+                        <img src="image/About-Us.jpg" alt="School Board"
+                            class="w-full h-full rounded-full border-8 border-pink-300 object-cover shadow-lg transition-transform duration-300 hover:scale-105" />
+                    </div>
+                </div>
+            </div>
+            <!-- End Card -->
+        </div>
+    </section>
+
+    <section class="bg-gray-50 py-16 px-4 sm:px-8 md:px-16">
+        <div class="max-w-7xl mx-auto">
+            <!-- Heading -->
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16 leading-tight">
+                What We Offer
+            </h1>
+
+            <!-- Features List -->
+            <div class="space-y-20">
+                <!-- Feature 1 -->
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12 group">
+                    <div class="w-full md:w-1/2 order-2 md:order-1">
+                        <div
+                            class="relative overflow-hidden rounded-2xl border-8 border-pink-300 shadow-lg transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1">
+                            <img src="image/strong-academic.jpg" alt="Strong Academic Foundation"
+                                class="w-full h-80 object-cover" />
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-1/2 order-1 md:order-2 text-center md:text-left">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
+                            A Strong Academic Foundation
+                        </h2>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            Engaging, well-rounded curriculum designed to spark curiosity
+                            and critical thinking.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12 group">
+                    <div class="w-full md:w-1/2 text-center md:text-left">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
+                            Safe and Supportive Environment
+                        </h2>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            A nurturing space where every learner feels valued, heard, and
+                            empowered.
+                        </p>
+                    </div>
+
+                    <div class="w-full md:w-1/2">
+                        <div
+                            class="relative overflow-hidden rounded-2xl border-8 border-pink-300 shadow-lg transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1">
+                            <img src="image/Environment.jpg" alt="Safe and Supportive Environment"
+                                class="w-full h-80 object-cover" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12 group">
+                    <div class="w-full md:w-1/2 order-2 md:order-1">
+                        <div
+                            class="relative overflow-hidden rounded-2xl border-8 border-pink-300 shadow-lg transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1">
+                            <img src="image/Art.jpg" alt="Creative Arts and Innovation"
+                                class="w-full h-80 object-cover" />
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-1/2 order-1 md:order-2 text-center md:text-left">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
+                            Creative Arts and Innovation
+                        </h2>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            Opportunities in music, art, technology, and design to inspire
+                            creativity and innovation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12 group">
+                    <div class="w-full md:w-1/2 text-center md:text-left">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
+                            Character and Leadership Development
+                        </h2>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            Programs that build confidence, empathy, resilience, and
+                            leadership skills.
+                        </p>
+                    </div>
+
+                    <div class="w-full md:w-1/2">
+                        <div
+                            class="relative overflow-hidden rounded-2xl border-8 border-pink-300 shadow-lg transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1">
+                            <img src="image/LeaderShip.jpg" alt="Character and Leadership Development"
+                                class="w-full h-80 object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testiminals Section  -->
+    <section class="bg-[#0193DC] font-sans text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+            <!-- Section Heading -->
+            <div class="text-center mb-12 md:mb-16">
+                <h1 class="text-3xl sm:text-4xl font-bold mb-4">
+                    Parents Testimonials
+                </h1>
+                <h2 class="text-xl sm:text-2xl text-white text-opacity-90">
+                    What people are saying about us
+                </h2>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                <!-- Testimonial 1 -->
+                <div
+                    class="bg-white bg-opacity-10 p-6 sm:p-8 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border border-white border-opacity-20 cursor-pointer group">
+                    <div class="flex items-start">
+                        <svg class="w-8 h-8 text-yellow-400 mt-1 mr-4 group-hover:scale-110 transition-transform duration-300"
+                            fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                            </path>
+                        </svg>
+                        <div>
+                            <blockquote class="text-white text-opacity-90 text-base sm:text-lg mb-6">
+                                "The Learner School has been a wonderful experience for our
+                                child. The teachers are incredibly nurturing, and the school
+                                environment is full of creativity and warmth. We have seen so
+                                much growth and confidence in our little one!"
+                            </blockquote>
+                            <div class="font-medium">
+                                <p>Mr. Farooq</p>
+                                <p class="text-white text-opacity-70 text-sm">Parent</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div
+                    class="bg-white bg-opacity-10 p-6 sm:p-8 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border border-white border-opacity-20 cursor-pointer group">
+                    <div class="flex items-start">
+                        <svg class="w-8 h-8 text-yellow-400 mt-1 mr-4 group-hover:scale-110 transition-transform duration-300"
+                            fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                            </path>
+                        </svg>
+                        <div>
+                            <blockquote class="text-white text-opacity-90 text-base sm:text-lg mb-6">
+                                "From the moment we walked in, we knew this was the right
+                                place. The focus on both academics and character building is
+                                truly special. The Learner School feels like an extended
+                                family."
+                            </blockquote>
+                            <div class="font-medium">
+                                <p>Mr. Usama</p>
+                                <p class="text-white text-opacity-70 text-sm">Parent</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Gellary  -->
+    <section class="bg-gray-50 font-sans">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+            <!-- Header -->
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+                <div>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-gray-800">
+                        Events Gallery
+                    </h2>
+                    <p class="text-gray-600 mt-1">What's happening</p>
+                </div>
+                <a href="#"
+                    class="flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200 group">
+                    See All
+                    <span class="ml-2 group-hover:translate-x-1 transition-transform duration-200">▶</span>
+                </a>
+            </div>
+
+            <!-- Events Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Event 1 -->
+                <a href="#"
+                    class="block bg-[#FFF50066] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 flex group">
+                    <div class="w-1/2">
+                        <img src="image/event1.jpg" alt="Eid Event" class="h-full w-full object-cover" />
+                    </div>
+                    <div class="w-1/2 p-6 flex flex-col justify-center">
+                        <h3
+                            class="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-200">
+                            Eid ul Fitr
+                        </h3>
+                        <div class="flex items-center mt-2 text-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <span>August 23</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Event 2 -->
+                <a href="#"
+                    class="block bg-[#FFF50066] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 flex group">
+                    <div class="w-1/2">
+                        <img src="image/event2.jpg" alt="Party Event" class="h-full w-full object-cover" />
+                    </div>
+                    <div class="w-1/2 p-6 flex flex-col justify-center">
+                        <h3
+                            class="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-200">
+                            Annual Gathering Party
+                        </h3>
+                        <div class="flex items-center mt-2 text-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <span>December 28</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section  -->
+    <section class="bg-gray-100 min-h-screen flex items-center justify-center p-4 lg:p-8">
+        <div class="w-full max-w-7xl bg-cover bg-center rounded-xl overflow-hidden shadow-2xl" style="background-image: url('/image/contact.jpg')">
+            <!-- Overlay on background for better visibility -->
+            <div class="bg-white bg-opacity-30 p-6 lg:p-16">
+                <!-- Header -->
+                <div class="text-center mb-6 lg:mb-10">
+                    <h1 class="text-3xl lg:text-4xl font-bold text-gray-900">Get in Touch</h1>
+                    <p class="mt-2 text-gray-800">We would love to hear from you!</p>
+                </div>
+    
+                <!-- Form -->
+                <form class="w-full space-y-4 lg:space-y-6">
+                    <!-- First line (full width on mobile, 50% on desktop) -->
+                    <div class="w-full lg:w-[50%]">
+                        <label for="name" class="block text-sm font-medium text-gray-800 mb-1">Your Name</label>
+                        <input id="name" name="name" type="text" required
+                            class="block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 transition" />
+                    </div>
+    
+                    <!-- Second line (full width on mobile, 60% on desktop) -->
+                    <div class="w-full lg:w-[60%]">
+                        <label for="email" class="block text-sm font-medium text-gray-800 mb-1">Your Email</label>
+                        <input id="email" name="email" type="email" required
+                            class="block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 transition" />
+                    </div>
+    
+                    <!-- Third line (100% width always) -->
+                    <div class="w-full">
+                        <label for="subject" class="block text-sm font-medium text-gray-800 mb-1">Subject</label>
+                        <input id="subject" name="subject" type="text" required
+                            class="block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 transition" />
+                    </div>
+    
+                    <!-- Fourth line (100% width always) -->
+                    <div class="w-full">
+                        <label for="message" class="block text-sm font-medium text-gray-800 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="4" required
+                            class="block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 transition"></textarea>
+                    </div>
+    
+                    <!-- Submit Button (right side) -->
+                    <div class="flex justify-end">
+                        <button type="submit"
+                            class="px-6 py-2 lg:px-8 lg:py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-md shadow-lg transition transform hover:scale-105">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe section  -->
+    <section class="bg-gray-100 py-16 px-4 sm:px-8 lg:px-20">
+        <div class="max-w-5xl mx-auto">
+            <!-- Card -->
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden p-8 sm:p-12 lg:p-16">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                    <!-- Image inside card -->
+                    <div class="w-full">
+                        <div class="overflow-hidden rounded-xl group h-[350px] sm:h-[400px] lg:h-[450px]">
+                            <img src="image/subscribe.png" alt="Newsletter"
+                                class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
+                        </div>
+                    </div>
+
+                    <!-- Content inside card -->
+                    <div class="w-full space-y-8">
+                        <!-- Social Icons -->
+                        <div class="flex justify-center lg:justify-start space-x-5">
+                            <a href="#"
+                                class="text-gray-500 hover:text-blue-500 transform hover:scale-110 transition duration-300">
+                                <i class="fab fa-facebook-f text-2xl"></i>
+                            </a>
+                            <a href="#"
+                                class="text-gray-500 hover:text-blue-400 transform hover:scale-110 transition duration-300">
+                                <i class="fab fa-twitter text-2xl"></i>
+                            </a>
+                            <a href="#"
+                                class="text-gray-500 hover:text-pink-500 transform hover:scale-110 transition duration-300">
+                                <i class="fab fa-instagram text-2xl"></i>
+                            </a>
+                            <a href="#"
+                                class="text-gray-500 hover:text-red-600 transform hover:scale-110 transition duration-300">
+                                <i class="fab fa-youtube text-2xl"></i>
+                            </a>
+                        </div>
+
+                        <!-- Heading -->
+                        <div class="text-center lg:text-left">
+                            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                                Subscribe to our newsletter
+                            </h2>
+                            <p class="text-gray-600 text-base md:text-lg">
+                                Be the first to get the latest updates and offers. No spam, we
+                                promise.
+                            </p>
+                        </div>
+
+                        <!-- Form -->
+                        <form class="space-y-5">
+                            <!-- Email Input -->
+                            <div class="relative">
+                                <input type="email" placeholder="Enter your email address"
+                                    class="peer w-full px-5 py-3 text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-100 focus:border-blue-400 placeholder-gray-400 transition duration-300 bg-transparent"
+                                    required />
+                                <span
+                                    class="absolute inset-y-0 right-4 flex items-center text-red-500 opacity-0 peer-invalid:opacity-100 transition-opacity">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                </span>
+                            </div>
+
+                            <!-- Confirm Email Input -->
+                            <div class="relative">
+                                <input type="email" placeholder="Confirm your email address"
+                                    class="peer w-full px-5 py-3 text-gray-800 border border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-100 focus:border-blue-400 placeholder-gray-400 transition duration-300 bg-transparent"
+                                    required />
+                                <span
+                                    class="absolute inset-y-0 right-4 flex items-center text-red-500 opacity-0 peer-invalid:opacity-100 transition-opacity">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                </span>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="flex justify-center lg:justify-start">
+                                <button type="submit"
+                                    class="px-8 py-3 bg-red-600 hover:bg-red-700 active:bg-red-800 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 active:scale-95 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-red-300">
+                                    Subscribe
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section  -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Logo & Description -->
+            <div class="text-center md:text-left">
+                <a href="https://mechmaven.com/" class="inline-block mb-4">
+                    <img src="image/logo.png" alt="Mechmaven Logo"
+                        class="w-40 mx-auto md:mx-0 hover:opacity-90 transition-opacity" />
+                </a>
+                <p class="text-sm mb-4">The Learners High School</p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#" class="hover:text-blue-400 transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="hover:text-blue-300 transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#" class="hover:text-blue-600 transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#" class="hover:text-pink-500 transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div>
+                <h2 class="text-lg font-semibold mb-4 border-b border-gray-700 pb-2">
+                    About Us
+                </h2>
+                <ul class="space-y-2 text-sm">
+                    <li>
+                        <a href="#" class="hover:text-blue-400 transition">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-400 transition">Terms and Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-400 transition">Accessibility Statement</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-400 transition">Cookie Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-400 transition">Disclaimer</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Explore -->
+            <div>
+                <h2 class="text-lg font-semibold mb-4 border-b border-gray-700 pb-2">
+                    Events
+                </h2>
+                <ul class="space-y-2 text-sm">
+                    <li>
+                        <a href="#" class="hover:text-blue-400 transition">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-400 transition">Our Projects</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-400 transition">Why Choose Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-400 transition">Blog & News</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Us -->
+            <div>
+                <h2 class="text-lg font-semibold mb-4 border-b border-gray-700 pb-2">
+                    Contact Us
+                </h2>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start space-x-3">
+                        <svg class="w-5 h-5 text-blue-400 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <div>
+                            <p class="font-medium">Working Time</p>
+                            <p class="text-gray-400">Mon-Fri 09:AM - 05:PM</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <svg class="w-5 h-5 text-green-400 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                            </path>
+                        </svg>
+                        <div>
+                            <p class="font-medium">Phone</p>
+                            <p class="text-gray-400">+92 331-9988598</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <svg class="w-5 h-5 text-red-400 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                        <div>
+                            <p class="font-medium">Email</p>
+                            <p class="text-gray-400">info@learner.com</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="bg-red-700 text-white px-4 py-3">
+            <div
+                class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
+                <p class="text-sm">
+                    &copy; 2025 The Learner Model School. All rights reserved.
+                </p>
+                <div class="flex space-x-4 text-sm">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                    <a href="#" class="hover:underline">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Section  -->
+    <!-- <footer class="bg-[#000000] py-4 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            First Row - Horizontal Links
+            <div class="flex flex-col sm:flex-row justify-evenly items-start sm:items-center gap-3 sm:gap-4 pb-4 border-b border-gray-200">
+                About Us
+                <div class="text-center text-white sm:text-left">
+                    <h3 class="text-lg font-semibold mb-1">About Us</h3>
+                    <ul class="space-y-1">
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                    </ul>
+                </div>
+            
+                Events
+                <div class="text-center text-white sm:text-left">
+                    <h3 class="text-lg font-semibold mb-1">Events</h3>
+                    <ul class="space-y-1">
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                    </ul>
+                </div>
+            
+                Contact Us
+                <div class="text-center text-white sm:text-left">
+                    <h3 class="text-lg font-semibold mb-1">Contact Us</h3>
+                    <ul class="space-y-1">
+                        <li>0 000 000 000</li>
+                        <li>7 777 777 777</li>
+                    </ul>
+                </div>
+            </div>
+
+            Second Row - Social Media Icons
+            <div class="flex flex-col sm:flex-row justify-between items-center pt-4 gap-4">
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-blue-500 text-xl">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-blue-400 text-xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-pink-600 text-xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-red-600 text-xl">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                
+                Copyright
+                <p class="text-gray-500 text-sm">© 2025 The Learner High School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer> -->
+</body>
+
+</html>
